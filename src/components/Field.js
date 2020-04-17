@@ -3,7 +3,7 @@ import LanguageContext from "../contexts/LanguageContext";
 
 const Field = () => {
   const context = useContext(LanguageContext);
-  const text = context === "english" ? "Name" : "Naam";
+  const text = context.language === "english" ? "Name" : "Naam";
 
   return (
     <div className="ui field">
